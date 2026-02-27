@@ -20,13 +20,19 @@ export function ScrollToTop() {
         }
       }, 100);
     } else {
-      // URL without hash: Scroll to the top of the page
+      // URL without hash: Scroll to the top of the page immediately
       // Use smooth animation if same page, auto if different page
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: isSamePage ? 'smooth' : 'auto'
-      });
+      // Use requestAnimationFrame to ensure scroll happens before next paint
+      if (isSamePage) {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        });
+      } else {
+        // For different pages, scroll immediately without animation
+        window.scrollTo(0, 0);
+      }
     }
 
     // Update the previous location reference
