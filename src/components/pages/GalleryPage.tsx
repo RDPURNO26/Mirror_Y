@@ -131,7 +131,22 @@ export default function GalleryPage() {
               onClick={() => openLightbox(index)}
               className="group cursor-pointer relative overflow-hidden aspect-square border border-primary/20 hover:border-primary transition-all duration-300"
             >
-
+              {item.image && (
+                <Image
+                  src={item.image}
+                  alt={item.title || 'Gallery image'}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  width={400}
+                />
+              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <div className="text-foreground">
+                  <h3 className="font-heading text-lg">{item.title}</h3>
+                  {item.category && (
+                    <p className="text-sm text-foreground/70">{item.category}</p>
+                  )}
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
