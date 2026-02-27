@@ -51,7 +51,7 @@ export default function Header() {
             <Image 
               src="https://static.wixstatic.com/media/43707e_b279f9dc4a70477d85c02646016a2bdb~mv2.png" 
               alt="Mirror Creative Institute Logo" 
-              className="h-12 md:h-16 w-auto object-contain"
+              className="h-12 md:h-16 w-auto object-contain border-0 border-dashed border-[#363b3d] rounded-[21px] shadow-[12px_12px_4px_0px_#d9d9d9] mix-blend-normal"
               width={80}
             />
           </Link>
