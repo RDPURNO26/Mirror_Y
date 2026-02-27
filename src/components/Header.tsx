@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Image } from '@/components/ui/image';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,9 +46,14 @@ export default function Header() {
     >
       <div className="w-full max-w-[100rem] mx-auto px-8 md:px-16 lg:px-24">
         <div className="flex items-center justify-between h-20 md:h-24">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="font-heading text-2xl md:text-3xl text-primary group-hover:text-secondary transition-colors duration-300">Mirror Creative Institute</div>
+          {/* Logo - Home Button with Image */}
+          <Link to="/" className="flex items-center gap-3 group hover:opacity-80 transition-opacity duration-300">
+            <Image 
+              src="https://static.wixstatic.com/media/43707e_b279f9dc4a70477d85c02646016a2bdb~mv2.png" 
+              alt="Mirror Creative Institute Logo" 
+              className="h-12 md:h-16 w-auto object-contain"
+              width={80}
+            />
           </Link>
 
           {/* Desktop Navigation */}
