@@ -44,7 +44,7 @@ export default function Header() {
         isScrolled ? 'bg-glassmorphism-overlay backdrop-blur-md' : 'bg-transparent'
       }`}
     >
-      <div className="w-full max-w-[100rem] mx-auto px-8 md:px-16 lg:px-24">
+      <div className="w-full max-w-[100rem] mx-auto px-8 md:px-16 lg:px-24 bg-background">
         <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo - Home Button with Image */}
           <Link to="/" className="flex items-center gap-3 group hover:opacity-80 transition-opacity duration-300">
