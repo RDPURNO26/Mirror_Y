@@ -47,9 +47,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="font-heading text-2xl md:text-3xl text-primary group-hover:text-secondary transition-colors duration-300">
-              Mirror Creative
-            </div>
+            <div className="font-heading text-2xl md:text-3xl text-primary group-hover:text-secondary transition-colors duration-300">Mirror Creative Institute</div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -118,7 +116,6 @@ export default function Header() {
           </button>
         </div>
       </div>
-
       {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
