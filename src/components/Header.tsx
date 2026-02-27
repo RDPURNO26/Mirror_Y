@@ -97,6 +97,14 @@ export default function Header() {
               </Link>
             ))}
 
+            {/* Book Us for Concert CTA */}
+            <Link
+              to="/book-us"
+              className="bg-secondary text-secondary-foreground px-6 py-3 font-heading hover:shadow-[0_0_20px_rgba(184,134,11,0.4)] transition-all duration-300"
+            >
+              Book Us for Concert
+            </Link>
+
             {/* Enroll Now CTA */}
             <Link
               to="/enroll"
@@ -170,10 +178,18 @@ export default function Header() {
                 </Link>
               ))}
 
+              {/* Book Us for Concert in Mobile */}
+              <Link
+                to="/book-us"
+                className="block text-center bg-secondary text-secondary-foreground px-6 py-3 font-heading hover:shadow-[0_0_20px_rgba(184,134,11,0.4)] transition-all duration-300 mt-4"
+              >
+                Book Us for Concert
+              </Link>
+
               {/* Enroll Now in Mobile */}
               <Link
                 to="/enroll"
-                className="block text-center bg-primary text-primary-foreground px-6 py-3 font-heading hover:shadow-[0_0_20px_rgba(218,165,32,0.4)] transition-all duration-300 mt-4"
+                className="block text-center bg-primary text-primary-foreground px-6 py-3 font-heading hover:shadow-[0_0_20px_rgba(218,165,32,0.4)] transition-all duration-300 mt-2"
               >
                 Enroll Now
               </Link>
