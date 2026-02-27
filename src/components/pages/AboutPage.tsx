@@ -99,6 +99,83 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Owner Section - HM Jewel */}
+      <section className="w-full bg-gradient-to-b from-primary/5 to-background py-24">
+        <div className="w-full max-w-[100rem] mx-auto px-8 md:px-16 lg:px-24">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="font-heading text-5xl md:text-7xl text-foreground mb-6">
+              Meet Our Founder
+            </h2>
+            <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto">
+              The visionary behind Mirror Creative Institute
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative flex justify-center"
+            >
+              <div className="relative w-full max-w-md">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 blur-2xl" />
+                <div className="relative border-2 border-primary/40 overflow-hidden aspect-square">
+                  <Image
+                    src="https://static.wixstatic.com/media/43707e_ba0537c968bf400ea22640a9c8998aae~mv2.png"
+                    alt="HM Jewel - Founder"
+                    className="w-full h-full object-cover"
+                    width={500}
+                  />
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="space-y-8"
+            >
+              <div>
+                <h3 className="font-heading text-4xl md:text-5xl text-foreground mb-2">
+                  HM Jewel
+                </h3>
+                <p className="text-xl text-primary font-semibold mb-6">
+                  Founder & Creative Director
+                </p>
+              </div>
+
+              <div className="space-y-6 text-foreground/80 leading-relaxed text-lg">
+                <p>
+                  HM Jewel's journey in the creative arts spans decades of passion, dedication, and innovation. With a deep-rooted belief that creativity knows no boundaries, HM Jewel founded Mirror Creative Institute to create a sanctuary where artistic dreams transform into reality.
+                </p>
+                <p>
+                  Drawing from extensive experience in music, performance, and visual arts, HM Jewel has mentored hundreds of students, guiding them from their first tentative steps to confident performers and accomplished artists. His philosophy centers on the belief that every individual possesses unique creative potential waiting to be discovered and nurtured.
+                </p>
+                <p>
+                  Under HM Jewel's visionary leadership, Mirror Creative Institute has grown into a beacon of artistic excellence, known for its comprehensive curriculum, world-class instruction, and most importantly, its transformative impact on students' lives. His commitment to fostering creativity, building confidence, and celebrating artistic expression remains the driving force behind everything the institute does.
+                </p>
+              </div>
+
+              <div className="pt-6 border-t border-primary/20">
+                <p className="text-foreground/60 italic">
+                  "Art is not just what we create—it's who we become in the process."
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission & Vision Section */}
       <section className="w-full bg-gradient-to-b from-background to-primary/5 py-24">
         <div className="w-full max-w-[100rem] mx-auto px-8 md:px-16 lg:px-24">
