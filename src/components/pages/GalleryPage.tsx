@@ -79,7 +79,6 @@ export default function GalleryPage() {
   return (
     <div className="min-h-screen bg-background text-foreground font-paragraph">
       <Header />
-
       {/* Hero Section */}
       <section className="relative w-full max-w-[100rem] mx-auto min-h-[50vh] flex items-center justify-center overflow-hidden mt-20">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-background" />
@@ -102,7 +101,6 @@ export default function GalleryPage() {
           </motion.p>
         </div>
       </section>
-
       {/* Filter Tabs */}
       <section className="w-full max-w-[100rem] mx-auto px-8 md:px-16 lg:px-24 py-12">
         <div className="flex flex-wrap justify-center gap-4">
@@ -121,7 +119,6 @@ export default function GalleryPage() {
           ))}
         </div>
       </section>
-
       {/* Gallery Grid */}
       <section className="w-full max-w-[100rem] mx-auto px-8 md:px-16 lg:px-24 py-12 pb-24" style={{ minHeight: '800px' }}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -134,24 +131,7 @@ export default function GalleryPage() {
               onClick={() => openLightbox(index)}
               className="group cursor-pointer relative overflow-hidden aspect-square border border-primary/20 hover:border-primary transition-all duration-300"
             >
-              {item.image && (
-                <Image
-                  src={item.image}
-                  alt={item.title || 'Gallery image'}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  width={400}
-                />
-              )}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="font-heading text-lg text-foreground mb-1">
-                    {item.title}
-                  </h3>
-                  {item.category && (
-                    <p className="text-sm text-primary">{item.category}</p>
-                  )}
-                </div>
-              </div>
+
             </motion.div>
           ))}
         </div>
@@ -162,7 +142,6 @@ export default function GalleryPage() {
           </div>
         )}
       </section>
-
       {/* Lightbox */}
       <AnimatePresence>
         {lightboxIndex !== null && (
@@ -233,7 +212,6 @@ export default function GalleryPage() {
           </motion.div>
         )}
       </AnimatePresence>
-
       <Footer />
     </div>
   );
