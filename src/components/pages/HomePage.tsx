@@ -143,9 +143,7 @@ export default function HomePage() {
         className="fixed top-0 left-0 right-0 h-1 bg-primary z-[100] origin-left"
         style={{ scaleX }}
       />
-
       <Header />
-
       {/* --- HERO SECTION --- */}
       <section className="relative w-full h-screen overflow-hidden bg-background">
         <AnimatePresence mode="wait">
@@ -224,7 +222,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-
       {/* --- MARQUEE TICKER --- */}
       <div className="w-full bg-primary py-4 overflow-hidden whitespace-nowrap border-y border-primary-foreground/10">
         <motion.div 
@@ -246,7 +243,6 @@ export default function HomePage() {
           ))}
         </motion.div>
       </div>
-
       {/* --- WHAT WE OFFER (Bento Grid) --- */}
       <section className="w-full max-w-[120rem] mx-auto px-6 md:px-12 lg:px-24 py-32">
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
@@ -300,7 +296,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-
       {/* --- WHY CHOOSE US (Sticky Scroll) --- */}
       <section className="relative w-full bg-foreground text-background py-32">
         <div className="w-full max-w-[120rem] mx-auto px-6 md:px-12 lg:px-24">
@@ -356,7 +351,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* --- CORE VALUES (If Data Exists) --- */}
       {coreValues.length > 0 && (
         <section className="w-full max-w-[120rem] mx-auto px-6 md:px-12 lg:px-24 py-32 border-b border-white/10">
@@ -378,7 +372,6 @@ export default function HomePage() {
           </div>
         </section>
       )}
-
       {/* --- TESTIMONIALS (Horizontal Drag) --- */}
       {testimonials.length > 0 && (
         <section className="w-full py-32 overflow-hidden">
@@ -433,7 +426,6 @@ export default function HomePage() {
           </div>
         </section>
       )}
-
       {/* --- TEACHERS (Spotlight Grid) --- */}
       {teachers.length > 0 && (
         <section className="w-full max-w-[120rem] mx-auto px-6 md:px-12 lg:px-24 py-32 bg-gradient-to-b from-background to-background/50">
@@ -481,7 +473,6 @@ export default function HomePage() {
           </div>
         </section>
       )}
-
       {/* --- GALLERY TEASER (Masonry) --- */}
       {galleryItems.length > 0 && (
         <section className="w-full py-32">
@@ -530,7 +521,6 @@ export default function HomePage() {
           </div>
         </section>
       )}
-
       {/* --- CTA BANNER --- */}
       <section className="relative w-full py-40 overflow-hidden">
         <div className="absolute inset-0">
@@ -549,7 +539,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="font-heading text-5xl md:text-7xl lg:text-9xl text-foreground mb-8 uppercase tracking-tighter"
           >
-            Start Your <span className="text-primary">Legacy</span>
+            Start Your <span className="text-primary">j</span>
           </motion.h2>
           
           <motion.p
@@ -584,7 +574,6 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       <Footer />
     </div>
   );

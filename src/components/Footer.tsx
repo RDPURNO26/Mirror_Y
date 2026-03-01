@@ -30,9 +30,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block mb-6">
-              <div className="font-heading text-3xl text-primary">
-                Mirror Creative
-              </div>
+              <div className="font-heading text-primary text-3xl">Mirror Creative Institute</div>
             </Link>
             <p className="text-foreground/70 mb-6">
               Unleashing creativity and nurturing talent across musical instruments, singing, dancing, and art.
@@ -80,7 +78,7 @@ export default function Footer() {
                 <div className="w-10 h-10 flex items-center justify-center border border-primary/30 group-hover:border-primary transition-colors duration-300">
                   <Mail className="w-5 h-5" />
                 </div>
-                <span>info@mirrorcreative.com</span>
+                <span>mirrorjewel2009@gmail.com</span>
               </a>
               <a
                 href="tel:+1234567890"
@@ -89,7 +87,7 @@ export default function Footer() {
                 <div className="w-10 h-10 flex items-center justify-center border border-primary/30 group-hover:border-primary transition-colors duration-300">
                   <Phone className="w-5 h-5" />
                 </div>
-                <span>+1 (234) 567-890</span>
+                <span>01749589906</span>
               </a>
             </div>
           </div>
