@@ -31,7 +31,6 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background text-foreground font-paragraph">
       <Header />
-
       {/* Hero Section */}
       <section className="relative w-full max-w-[100rem] mx-auto min-h-[60vh] flex items-center justify-center overflow-hidden mt-20">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-background" />
@@ -54,7 +53,6 @@ export default function AboutPage() {
           </motion.p>
         </div>
       </section>
-
       {/* Our Story Section */}
       <section className="w-full max-w-[100rem] mx-auto px-8 md:px-16 lg:px-24 py-24">
         <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -98,7 +96,6 @@ export default function AboutPage() {
           </motion.div>
         </div>
       </section>
-
       {/* Owner Section - HM Jewel */}
       <section className="w-full bg-gradient-to-b from-primary/5 to-background py-24">
         <div className="w-full max-w-[100rem] mx-auto px-8 md:px-16 lg:px-24">
@@ -129,11 +126,13 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 blur-2xl" />
                 <div className="relative border-2 border-primary/40 overflow-hidden aspect-square">
                   <Image
-                    src="https://static.wixstatic.com/media/43707e_ba0537c968bf400ea22640a9c8998aae~mv2.png"
-                    alt="HM Jewel - Founder"
+                    src="https://static.wixstatic.com/media/43707e_682aa501855041009cb4ca060fe7339b~mv2.jpg"
                     className="w-full h-full object-cover"
                     width={500}
-                  />
+                    originWidth={1024}
+                    originHeight={1024}
+                    focalPointX={56.103515625}
+                    focalPointY={50.927734375} />
                 </div>
               </div>
             </motion.div>
@@ -175,7 +174,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
       {/* Mission & Vision Section */}
       <section className="w-full bg-gradient-to-b from-background to-primary/5 py-24">
         <div className="w-full max-w-[100rem] mx-auto px-8 md:px-16 lg:px-24">
@@ -208,7 +206,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
       {/* Core Values Section */}
       {coreValues.length > 0 && (
         <section className="w-full max-w-[100rem] mx-auto px-8 md:px-16 lg:px-24 py-24">
@@ -256,7 +253,6 @@ export default function AboutPage() {
           </div>
         </section>
       )}
-
       {/* Founder's Message Section */}
       <section className="w-full bg-gradient-to-b from-background to-primary/5 py-24">
         <div className="w-full max-w-[100rem] mx-auto px-8 md:px-16 lg:px-24">
@@ -296,7 +292,6 @@ export default function AboutPage() {
           </motion.div>
         </div>
       </section>
-
       {/* Photo Gallery Section */}
       <section className="w-full max-w-[100rem] mx-auto px-8 md:px-16 lg:px-24 py-24">
         <motion.div
@@ -334,7 +329,6 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
-
       <Footer />
     </div>
   );

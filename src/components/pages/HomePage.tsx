@@ -539,7 +539,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="font-heading text-5xl md:text-7xl lg:text-9xl text-foreground mb-8 uppercase tracking-tighter"
           >
-            Start Your <span className="text-primary">j</span>
+            Start Your <span className="text-primary">journey</span>
           </motion.h2>
           
           <motion.p
