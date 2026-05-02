@@ -145,3 +145,8 @@ For support and questions:
 ---
 
 Built with ❤️ using Wix Vibe, Astro, and modern web technologies.
+
+
+## About the Author
+**Rahimanid Dian Purno**
+[Portfolio](https://rdpurno.vercel.app/)
