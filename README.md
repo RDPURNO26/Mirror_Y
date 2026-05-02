@@ -1,152 +1,69 @@
-# Wixstro - Wix Astro Template
+# 🌌 Mirror_Y (Wixstro)
 
-A modern, full-featured Wix Astro template built with React, TypeScript, and Tailwind CSS. This template provides a solid foundation for building dynamic, interactive websites with Wix's powerful ecosystem.
+<p align="center">
+  <img src="https://img.shields.io/badge/Astro-5.0+-BC52EE?style=for-the-badge&logo=astro&logoColor=white" alt="Astro" />
+  <img src="https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Wix-Headless-0C63CE?style=for-the-badge&logo=wix&logoColor=white" alt="Wix" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-3.0+-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+</p>
 
-## 🚀 Features
+---
 
-- **Astro Framework** - Modern static site generator with server-side rendering
-- **React Integration** - Full React support with JSX components
-- **TypeScript** - Type-safe development experience
-- **Tailwind CSS** - Utility-first CSS framework with custom components
-- **Wix Integration** - Seamless integration with Wix services and APIs
-- **Modern UI Components** - Radix UI components with custom styling
-- **Authentication** - Built-in member authentication and protected routes
-- **CMS Integration** - Content management system integration
-- **Client-side Routing** - React Router for seamless navigation
-- **Responsive Design** - Mobile-first responsive design
-- **Testing** - Vitest testing framework setup
-- **Development Tools** - ESLint, TypeScript checking, and more
+**Mirror_Y** (codenamed **Wixstro**) is a high-performance, developer-first bridge between **Wix Headless CMS** and **Astro**. It allows you to build lightning-fast, SEO-optimized frontends while leveraging the powerful content management and business logic of Wix.
+
+## ✨ Key Features
+
+- **🚀 Astro 5 Integration**: Harness the power of Islands Architecture for zero-JS by default.
+- **🔌 Wix Headless SDK**: Seamless integration with Wix Bookings, Stores, and CMS.
+- **🎨 Tailwind CSS + Shadcn/ui**: Beautiful, accessible components out of the box.
+- **📱 Responsive & Accessible**: Mobile-first design principles with full WCAG compliance.
+- **⚡ Performance Optimized**: Pre-rendered pages with dynamic hydration where needed.
+- **🛠️ Developer Experience**: Type-safe APIs with TypeScript and specialized Astro components.
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Astro 5.8.0
-- **Frontend**: React 18.3.0
-- **Styling**: Tailwind CSS 3.4.14
-- **Language**: TypeScript 5.8.3
-- **UI Components**: Radix UI
-- **State Management**: Zustand
-- **Forms**: React Hook Form with Zod validation
-- **Testing**: Vitest
-- **Build Tool**: Vite
-- **Deployment**: Cloudflare
-
+- **Frontend**: [Astro 5](https://astro.build/), [React](https://reactjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/), [Lucide Icons](https://lucide.dev/)
+- **Backend/CMS**: [Wix Headless](https://dev.wix.com/docs/sdk)
+- **Tooling**: TypeScript, Vite, ESLint, Prettier
 
 ## 🚀 Getting Started
 
-### Prerequisites
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/RDPURNO26/Mirror_Y.git
+   ```
 
-- Node.js (version 18 or higher)
-- npm or yarn package manager
-- Wix account and site
-
-### Installation
-
-1. **Install dependencies**:
+2. **Install dependencies**:
    ```bash
    npm install
    ```
 
-2. **Set up environment variables**:
-   ```bash
-   npm run env
+3. **Set up Environment Variables**:
+   Create a `.env` file with your Wix Client ID:
+   ```env
+   WIX_CLIENT_ID=your_client_id_here
    ```
 
-3. **Start development server**:
+4. **Run development server**:
    ```bash
    npm run dev
    ```
 
-The development server will start and you can view your site at `http://localhost:4321`.
+## 👨‍💻 Author
 
-## 📁 Project Structure
+**Rahimanid Dian Purno**
+*Final-semester Computer Science Student & AI Developer*
 
-```
-main/
-├── src/
-│   ├── components/          # React components
-│   │   ├── ui/             # Reusable UI components
-│   │   ├── Head.tsx        # Page head component
-│   │   └── Router.tsx      # Routing component
-│   ├── hooks/              # Custom React hooks
-│   ├── lib/                # Utility functions
-│   ├── pages/              # Astro pages
-│   └── styles/             # Global styles
-├── integrations/           # Wix integrations
-│   ├── cms/               # CMS integration
-│   └── members/           # Member authentication
-├── public/                # Static assets
-└── eslint-rules/          # Custom ESLint rules
-```
+I'm an aspiring AI researcher focusing on Human-Computer Interaction and Intelligent Systems. Currently working on bridging the gap between sophisticated AI models and intuitive user interfaces.
 
-## 🎨 UI Components
-
-This template includes a comprehensive set of UI components built with Radix UI and styled with Tailwind CSS:
-
-- **Layout**: Accordion, Collapsible, Tabs, Sheet
-- **Forms**: Input, Select, Checkbox, Radio Group, Switch
-- **Navigation**: Navigation Menu, Menubar, Breadcrumb
-- **Feedback**: Alert, Toast, Progress, Skeleton
-- **Overlays**: Dialog, Popover, Tooltip, Hover Card
-- **Data Display**: Table, Card, Badge, Avatar
-- **Interactive**: Button, Toggle, Slider, Command
-
-## 🔧 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run release` - Release to Wix
-- `npm run env` - Pull environment variables
-- `npm run check` - Type check with Astro
-- `npm run test:run` - Run tests
-- `npm install` - Install dependencies
-
-## 🧪 Testing
-
-The project includes Vitest for testing:
-
-```bash
-npm run test:run
-```
-
-## 📱 Responsive Design
-
-The template is built with a mobile-first approach and includes:
-
-- Responsive breakpoints
-- Touch-friendly interactions
-- Optimized images
-- Flexible layouts
-
-## 🚀 Deployment
-
-The template is configured for deployment on Cloudflare:
-
-```bash
-npm run build
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests and linting
-5. Submit a pull request
-
-## 🆘 Support
-
-For support and questions:
-
-- Check the [Wix Developer Documentation](https://dev.wix.com/)
-- Review the [Astro Documentation](https://docs.astro.build/)
-
+🔗 **Portfolio**: [rdpurno.vercel.app](https://rdpurno.vercel.app/)
+🐙 **GitHub**: [@RDPURNO26](https://github.com/RDPURNO26)
+💼 **LinkedIn**: [rdpurno26](https://www.linkedin.com/in/rdpurno26/)
+📧 **Email**: [rdpurno417@gmail.com](mailto:rdpurno417@gmail.com)
 
 ---
 
-Built with ❤️ using Wix Vibe, Astro, and modern web technologies.
-
-
-## About the Author
-**Rahimanid Dian Purno**
-[Portfolio](https://rdpurno.vercel.app/)
+<p align="center">
+  Built with ❤️ for the future of the web.
+</p>
